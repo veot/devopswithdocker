@@ -1,0 +1,57 @@
+Script started on 2021-03-17 18:54:19+02:00 [TERM="xterm-kitty" TTY="/dev/pts/0" COLUMNS="119" LINES="33"]
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m docker ps -a
+[2 qCONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                     PORTS     NAMES
+f216fe397784   nginx     "/docker-entrypoint.…"   4 minutes ago   Exited (0) 3 minutes ago             happy_agnesi
+e3a593043435   nginx     "/docker-entrypoint.…"   4 minutes ago   Exited (0) 3 minutes ago             kind_shaw
+1adf0e8b5e84   nginx     "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes               80/tcp    nifty_maxwell
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m docker stop 1a
+[2 q1a
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m docker prune[K[K[K[K[Kcontainer prune[K[K[K[K[K[K[K[K[Kner prune
+[2 qWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+f216fe39778446c1aec4015f7224582c8d5655f1800e0170f8074eccbf8ef5ad
+e3a5930434356cb159bbf10431d5e8a883632389682e2b995bea91a3683fcb52
+1adf0e8b5e84595bae3f5a9d18b90270cee18a6e7bf6266a7df5b11aa61dcc49
+
+Total reclaimed space: 3.342kB
+
+[1;36mschool/docker/part1[0m took [1;33m2s[0m 
+[6 q[1;32m❯[0m docker container prune[C[C[C[C[C[C[C[C[C[8Pstop 1a[2Pps -a
+[2 qCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m docker image[K[K[Kages
+[2 qREPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+nginx        latest    6084105296a9   5 days ago   133MB
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m docker rm [K[K[Kimage rm nginx
+[2 qUntagged: nginx:latest
+Untagged: nginx@sha256:d2925188effb4ddca9f14f162d6fba9b5fab232028aa07ae5c1dab764dca8f9f
+Deleted: sha256:6084105296a952523c36eea261af38885f41e9d1d0001b4916fa426e45377ffe
+Deleted: sha256:3b172069177f8982c1df589c155bfb7482b3f3fb90ef284a34013e0b63e0fe6c
+Deleted: sha256:03c12533ac40107c4b01c74df19b35e63948474b7cfbc9829ab26b094f90de31
+Deleted: sha256:123667e139767c1fe3bbf4310a80eaca32ab2944b42d0e0863d66dc09215a2e9
+Deleted: sha256:96c2aa1177733f403679550776da7e9dcb3b4f0e46e0548467e013017dd8ee23
+Deleted: sha256:2df57a38a8fcc8e4e459ade73b0f8d85b19ed4f6b39eb4686eddd5118b99c256
+Deleted: sha256:14a1ca976738392ffa2ae4e54934ba28ab9cb756e924ad9297a4795a4adbfdf6
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m docker image rm nginxs[K[1Pps -a
+[2 qCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m docker ps -aimage rm nginxs[K
+[2 qREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+[1;36mschool/docker/part1[0m 
+[6 q[1;32m❯[0m exit
+
+Script done on 2021-03-17 18:55:22+02:00 [COMMAND_EXIT_CODE="0"]
