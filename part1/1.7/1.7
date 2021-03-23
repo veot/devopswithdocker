@@ -1,0 +1,41 @@
+Script started on 2021-03-23 21:17:56+02:00 [TERM="xterm-kitty" TTY="/dev/pts/0" COLUMNS="119" LINES="63"]
+
+[1;36mdocker/part1/1.7[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m⇡[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker build.[K . -t devopsdockeruh/simple-web-service:web-server
+[2 qSending build context to Docker daemon   2.56kB
+Step 1/2 : FROM devopsdockeruh/simple-web-service:alpine
+ ---> fd312adc88e0
+Step 2/2 : CMD server
+ ---> Running in e3992cebbd00
+Removing intermediate container e3992cebbd00
+ ---> 22b005ec60ef
+Successfully built 22b005ec60ef
+Successfully tagged devopsdockeruh/simple-web-service:web-server
+
+[1;36mdocker/part1/1.7[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m⇡[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker tag devopsdockeruh/simple-web-service:web-server web-server
+[2 q
+[1;36mdocker/part1/1.7[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m⇡[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker images
+[2 qREPOSITORY                          TAG          IMAGE ID       CREATED          SIZE
+devopsdockeruh/simple-web-service   web-server   22b005ec60ef   32 seconds ago   15.7MB
+web-server                          latest       22b005ec60ef   32 seconds ago   15.7MB
+devopsdockeruh/simple-web-service   ubuntu       4e3362e907d5   9 days ago       83MB
+devopsdockeruh/simple-web-service   alpine       fd312adc88e0   9 days ago       15.7MB
+ubuntu                              latest       4dd97cefde62   2 weeks ago      72.9MB
+
+[1;36mdocker/part1/1.7[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m⇡[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker run web-server
+[2 q[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C
+[1;36mdocker/part1/1.7[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m⇡[0m[1;31m][0m took [1;33m5s[0m 
+[6 q[1;31m❯[0m exit
+
+Script done on 2021-03-23 21:19:04+02:00 [COMMAND_EXIT_CODE="2"]
