@@ -1,0 +1,58 @@
+Script started on 2021-03-23 19:11:21+02:00 [TERM="xterm-kitty" TTY="/dev/pts/0" COLUMNS="138" LINES="63"]
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker pull devopsdockeruh/simple-web-service:alpine
+[2 qalpine: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kba3557a56b15: Pulling fs layer [1B
+[1A[2K1dace236434b: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[3A[2Kba3557a56b15: Downloading [>                                                  ]  29.25kB/2.812MB[3B[1A[2K4f4fb700ef54: Downloading [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[3A[2Kba3557a56b15: Downloading [=====================>                             ]  1.215MB/2.812MB[3B[2A[2K1dace236434b: Downloading [>                                                  ]  52.24kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [=============================>                     ]  1.674MB/2.812MB[3B[2A[2K1dace236434b: Downloading [========>                                          ]  911.8kB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [=====================================>             ]    2.1MB/2.812MB[3B[2A[2K1dace236434b: Downloading [===============>                                   ]   1.62MB/5.117MB[2B[3A[2Kba3557a56b15: Downloading [==============================================>    ]  2.591MB/2.812MB[3B[2A[2K1dace236434b: Downloading [=====================>                             ]  2.198MB/5.117MB[2B[3A[2Kba3557a56b15: Verifying Checksum [3B[3A[2Kba3557a56b15: Download complete [3B[3A[2Kba3557a56b15: Extracting [>                                                  ]  32.77kB/2.812MB[3B[2A[2K1dace236434b: Downloading [=============================>                     ]  3.046MB/5.117MB[2B[3A[2Kba3557a56b15: Extracting [==================================================>]  2.812MB/2.812MB[3B[3A[2Kba3557a56b15: Pull complete [3B[2A[2K1dace236434b: Downloading [========================================>          ]  4.148MB/5.117MB[2B[2A[2K1dace236434b: Verifying Checksum [2B[2A[2K1dace236434b: Download complete [2B[2A[2K1dace236434b: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2K1dace236434b: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2K1dace236434b: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m took [1;33m3s[0m 
+[6 q[1;32m❯[0m docker images
+[2 qREPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   9 days ago    83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   9 days ago    15.7MB
+ubuntu                              latest    4dd97cefde62   2 weeks ago   72.9MB
+fav_distro                          bionic    329ed837d508   2 weeks ago   63.3MB
+ubuntu                              18.04     329ed837d508   2 weeks ago   63.3MB
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker run -dit simple-web-service [K:ap[Klpine
+[2 qUnable to find image 'simple-web-service:alpine' locally
+docker: Error response from daemon: pull access denied for simple-web-service, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;31m❯[0m docker run -dit simple-web-service:alpinedsimple-web-service:alpineesimple-web-service:alpinevsimple-web-service:alpineosimple-web-service:alpinepsimple-web-service:alpine[Csimple-web-service:alpinedsimple-web-service:alpineosimple-web-service:alpinecsimple-web-service:alpineksimple-web-service:alpineesimple-web-service:alpinersimple-web-service:alpinersimple-web-service:alpineusimple-web-service:alpinehsimple-web-service:alpine/simple-web-service:alpine
+[2 qUnable to find image 'devopsdockerruh/simple-web-service:alpine' locally
+docker: Error response from daemon: pull access denied for devopsdockerruh/simple-web-service, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;31m❯[0m devopsdockeruh/simple-web-service[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdocker run -dit devopsdockerruh/simple-web-service:alpine[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdevopsdockeruh/simple-web-service:alpine
+[2 q6b15a658554f54a0a5f390d0bec8e35c29d0b9fdcbe6c3e2bee260402a84f7ce
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker exec -it 6b sh
+[2 q/usr/src/app # [6n/usr/src/app # [Jls
+[1;32mserver[m    [0;0mtext.log[m
+/usr/src/app # [6nles[J[J[Jcat te/usr/src/app # cat text.log [J[J[J[J[J[J[J[J[J[J[J[J[J[Jtail tex/usr/src/app # tail text.log [J
+2021-03-23 17:13:43 +0000 UTC
+2021-03-23 17:13:45 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-03-23 17:13:47 +0000 UTC
+2021-03-23 17:13:49 +0000 UTC
+2021-03-23 17:13:51 +0000 UTC
+2021-03-23 17:13:53 +0000 UTC
+2021-03-23 17:13:55 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-03-23 17:13:57 +0000 UTC
+/usr/src/app # [6n
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m took [1;33m33s[0m 
+[6 q[1;32m❯[0m exit
+
+Script done on 2021-03-23 19:14:20+02:00 [COMMAND_EXIT_CODE="0"]
