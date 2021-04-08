@@ -1,0 +1,17 @@
+Script started on 2021-04-08 17:45:38+03:00 [TERM="xterm-kitty" TTY="/dev/pts/0" COLUMNS="119" LINES="33"]
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker run --rm -d -p 8080:8080 devopsdockeruh/simple-web-service server
+[2 qde285daf09bde23838839c1ef07951a88d2ba0f3d3e08f9f4ea3a9e8f143a080
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;32m❯[0m curl localhost:8080
+[2 q{"message":"You connected to the following path: /","path":"/"}
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;32m❯[0m docker stop sad_lumiere 
+[2 qsad_lumiere
+
+[1;36mdocker/part1[0m on [1;35m [0m[1;35mmaster[0m [1;31m[[0m[1;31m?[0m[1;31m][0m 
+[6 q[1;32m❯[0m exit
+
+Script done on 2021-04-08 17:46:04+03:00 [COMMAND_EXIT_CODE="0"]
