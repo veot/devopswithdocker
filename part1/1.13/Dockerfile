@@ -11,6 +11,7 @@ WORKDIR /usr/src/app
 # RUN wget https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
 # RUN tar -C /usr/local -xzf go1.16.3.linux-amd64.tar.gz
 # ENV PATH /go/bin:$PATH
+ENV REQUEST_ORIGIN http://localhost:5000
 
 # Build project
 RUN go build

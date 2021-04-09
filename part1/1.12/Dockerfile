@@ -9,6 +9,6 @@ RUN apk --no-cache add curl nodejs npm
 
 RUN npm install
 RUN npm install -g serve
-RUN npm run build
+RUN REACT_APP_BACKEND_URL=http://localhost:8080 npm run build
 
 CMD ["serve", "-s", "-l", "5000", "build"]
